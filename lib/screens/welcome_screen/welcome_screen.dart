@@ -12,11 +12,13 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Image.asset(
-            AppAssets.backgroundWelcome,
-            width: double.infinity,
-            height: MediaQuery.of(context).size.height * 0.50,
-            fit: BoxFit.cover,
+          Positioned.fill(
+            child: Image.asset(
+              AppAssets.backgroundWelcome,
+              width: double.infinity,
+              height: MediaQuery.of(context).size.height * 0.50,
+              fit: BoxFit.cover,
+            ),
           ),
           Align(
             alignment: Alignment.bottomCenter,

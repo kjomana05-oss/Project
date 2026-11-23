@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/screens/login_screen/login_screen.dart';
-import 'package:project/screens/sigin_in/sigin_in.dart';
+import 'package:project/screens/sign_in/sign_in.dart';
+import 'package:project/screens/sign_in/sub_sign_in.dart';
 import 'package:project/screens/splash_screen/splash_screen.dart';
 import 'package:project/screens/welcome_screen/welcome_screen.dart';
 import 'package:project/utils/resources/app_routes.dart';
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
         AppRoutes.splashRouteName: (context) => SplashScreen(),
         AppRoutes.welcomeRouteName: (context) => WelcomeScreen(),
         AppRoutes.loginRouteName: (context) => LoginScreen(),
-        AppRoutes.signInRouteName: (context) => SiginIn(),
+        AppRoutes.signInRouteName: (context) => SignIn(),
+        AppRoutes.subSignInRouteName: (context) => SubSignIn(),
       },
     );
   }
