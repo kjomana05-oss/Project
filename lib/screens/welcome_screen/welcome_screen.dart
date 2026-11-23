@@ -51,12 +51,7 @@ class WelcomeScreen extends StatelessWidget {
                       width: double.infinity,
                       height: 44,
                       child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.pushNamed(
-                            context,
-                            AppRoutes.loginRouteName,
-                          );
-                        },
+                        onPressed: () {},
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColor.darkGreenColor,
                           foregroundColor: AppColor.whiteColor,
@@ -88,7 +83,12 @@ class WelcomeScreen extends StatelessWidget {
                       width: double.infinity,
                       height: 44,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(
+                            context,
+                            AppRoutes.loginRouteName,
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColor.darkGreenColor,
                           foregroundColor: AppColor.whiteColor,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/utils/resources/app_assets.dart';
 import 'package:project/utils/resources/app_color.dart';
+import 'package:project/widgets/custom_text_field.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -25,6 +26,7 @@ class LoginScreen extends StatelessWidget {
                       fontSize: 28,
                     ),
                   ),
+                  CustomTextField(hintText: "HELLO"),
                 ],
               ),
             ),
