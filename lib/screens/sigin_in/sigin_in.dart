@@ -10,7 +10,12 @@ class SiginIn extends StatelessWidget {
       backgroundColor: AppColor.goldColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        leading: Icon(Icons.arrow_back_ios_new_rounded),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back_ios_new_rounded),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
