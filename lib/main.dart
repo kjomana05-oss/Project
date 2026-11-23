@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:project/screens/login_screen/login_screen.dart';
+import 'package:project/screens/sign_in/change_password.dart';
+import 'package:project/screens/sign_in/otp.dart';
+import 'package:project/screens/sign_in/password_done.dart';
 import 'package:project/screens/sign_in/sign_in.dart';
 import 'package:project/screens/sign_in/sub_sign_in.dart';
 import 'package:project/screens/splash_screen/splash_screen.dart';
@@ -25,6 +28,9 @@ class MyApp extends StatelessWidget {
         AppRoutes.loginRouteName: (context) => LoginScreen(),
         AppRoutes.signInRouteName: (context) => SignIn(),
         AppRoutes.subSignInRouteName: (context) => SubSignIn(),
+        AppRoutes.otpRouteName: (context) => Otp(),
+        AppRoutes.changePassword: (context) => ChangePassword(),
+        AppRoutes.passwordDone: (context) => PasswordDone(),
       },
     );
   }
