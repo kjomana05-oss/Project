@@ -4,6 +4,7 @@ abstract final class AppAssets {
   static String backgroundCreateAcount =
       "assets/images/background_createAcount.png";
   static String feSekty = "assets/images/feSekty_image.png";
+  static String feSektyLogo = "assets/images/feSekt_logo.jpeg";
   static String splashScreen = "assets/images/splash_screen.png";
   static String doneImage = "assets/images/done_image.png";
   static String driverIcon = "assets/icons/driver_icon.svg";

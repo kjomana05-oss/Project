@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/utils/resources/app_assets.dart';
 import 'package:project/utils/resources/app_color.dart';
+import 'package:project/utils/resources/app_routes.dart';
 import 'package:project/widgets/custom_elevated_button.dart';
 
 class PasswordDone extends StatelessWidget {
@@ -47,7 +48,9 @@ class PasswordDone extends StatelessWidget {
                 ),
               ),
               SizedBox(height: height * 0.04),
-              CustomElevatedButton(text: "Back to Login", onPressed: () {}),
+              CustomElevatedButton(text: "Back to Login", onPressed: () {
+                Navigator.popAndPushNamed(context, AppRoutes.signInRouteName);
+              }),
               SizedBox(height: height * 0.02),
               Text(
                 "Don't worry we `ll let  you know if there`s\na problem with your account ",

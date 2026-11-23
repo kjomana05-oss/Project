@@ -38,6 +38,7 @@ class WelcomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Spacer(),
+
                       Align(
                         alignment: .topLeft,
                         child: Text(
