@@ -1,5 +1,6 @@
 abstract final class AppRoutes {
   static const String splashRouteName = "splash_screen";
+  static const String onboarding = "onboarding";
   static const String homeRouteName = "home_screen";
   static const String loginRouteName = "login_screen";
   static const String signInRouteName = "sign_screen";

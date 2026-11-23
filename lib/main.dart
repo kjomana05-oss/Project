@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/screens/login_screen/login_screen.dart';
+import 'package:project/screens/onboarding_screen/onboarding.dart';
 import 'package:project/screens/sign_in/change_password.dart';
 import 'package:project/screens/sign_in/otp.dart';
 import 'package:project/screens/sign_in/password_done.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRoutes.splashRouteName,
       routes: {
         AppRoutes.splashRouteName: (context) => SplashScreen(),
+        AppRoutes.onboarding: (context) => OnboardingScreen(),
         AppRoutes.welcomeRouteName: (context) => WelcomeScreen(),
         AppRoutes.loginRouteName: (context) => LoginScreen(),
         AppRoutes.signInRouteName: (context) => SignIn(),

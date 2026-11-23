@@ -4,9 +4,14 @@ import 'package:project/utils/resources/app_assets.dart';
 import 'package:project/utils/resources/app_color.dart';
 import 'package:project/utils/resources/app_routes.dart';
 
-class WelcomeScreen extends StatelessWidget {
+class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
 
+  @override
+  State<WelcomeScreen> createState() => _WelcomeScreenState();
+}
+
+class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,6 +44,7 @@ class WelcomeScreen extends StatelessWidget {
                     children: [
                       Spacer(),
 
+                      SvgPicture.asset(AppAssets.feSektyImage),
                       Align(
                         alignment: .topLeft,
                         child: Text(
