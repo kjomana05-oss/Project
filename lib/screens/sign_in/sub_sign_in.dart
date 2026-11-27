@@ -30,34 +30,36 @@ class SubSignIn extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(height: height * 0.01),
-            Text(
-              " Password Recovery",
-              style: TextStyle(
-                color: AppColor.blackColor,
-                fontSize: 26,
-                fontWeight: FontWeight.w600,
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(height: height * 0.01),
+              Text(
+                " Password Recovery",
+                style: TextStyle(
+                  color: AppColor.blackColor,
+                  fontSize: 26,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
-            ),
-            SizedBox(height: height * 0.01),
-            Text(
-              " Please enter your email to reset your password",
-              style: TextStyle(
-                color: AppColor.grayColor,
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
+              SizedBox(height: height * 0.01),
+              Text(
+                " Please enter your email to reset your password",
+                style: TextStyle(
+                  color: AppColor.grayColor,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
-            ),
-            SizedBox(height: height * 0.12),
-            CustomTextField(hintText: "Password"),
-            SizedBox(height: height * 0.03),
-            CustomElevatedButton(text: "Reset password", onPressed: () {
-              Navigator.pushNamed(context, AppRoutes.otpRouteName);
-            }),
-          ],
+              SizedBox(height: height * 0.12),
+              CustomTextField(hintText: "Password"),
+              SizedBox(height: height * 0.03),
+              CustomElevatedButton(text: "Reset password", onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.otpRouteName);
+              }),
+            ],
+          ),
         ),
       ),
     );

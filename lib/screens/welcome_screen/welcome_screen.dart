@@ -14,6 +14,14 @@ class WelcomeScreen extends StatefulWidget {
 class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
+    final double height = MediaQuery
+        .of(context)
+        .size
+        .height;
+    final double width = MediaQuery
+        .of(context)
+        .size
+        .width;
     return Scaffold(
       body: Stack(
         children: [
@@ -42,9 +50,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Spacer(),
 
-                      SvgPicture.asset(AppAssets.feSektyImage),
+                      Align(
+                        alignment: .topLeft,
+                        child: Image.asset(AppAssets.feSektyImage,
+                          width: width * 0.6,
+                          height: height * 0.1,
+                        ),
+                      ),
+                      SizedBox(height: height * 0.01,),
                       Align(
                         alignment: .topLeft,
                         child: Text(
@@ -57,7 +71,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 22),
+
+                      SizedBox(height: height * 0.07),
                       SizedBox(
                         width: double.infinity,
                         height: 44,
